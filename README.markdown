@@ -1,6 +1,5 @@
-# Motivations
-
 Easily setup a GAE project using:
+
 * VRaptor
 * Objectify
 * Guice with static scan
