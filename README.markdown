@@ -34,16 +34,15 @@ Easily setup a GAE project using:
 
 ## Registering entites
 
-@Component
-@ApplicationScoped
-public class ObjectifyRegister {
+	@Component
+	@ApplicationScoped
+	public class ObjectifyRegister {
 	
-	static {
+		static {
 		
-		GAEOfy.register(User.class, "user");
+			GAEOfy.register(User.class, "user");
+		}
 	}
-
-}
 
 ## Controller
 
