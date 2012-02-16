@@ -12,23 +12,14 @@ Easily setup a GAE project using:
     $ ant runserver
     $ open http://localhost:8080
 
-# Creating REST resources
-
 ## Sample entity
 
 	public class User {
 	
 		@Id Long id;
 		String name;
-
-		public User() {}
-
-		public User(String name) {
-			this.name = name;
-		}
-	
+		
 		/* getters n setters */
-
 	}
 
 
@@ -39,7 +30,6 @@ Easily setup a GAE project using:
 	public class ObjectifyRegister {
 	
 		static {
-		
 			GAEOfy.register(User.class, "user");
 		}
 	}
